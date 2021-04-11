@@ -12,3 +12,9 @@ Api com um unico end-point que ira retornar uma pesquisa com vinculo por 3 tabel
 - Classe base para Paginação simples
 - Camada de Repository
 - DockerFile
+
+## Gerar as migrations
+Deixei um exemplo pela parte de Data estar separada do projeto principal (Projetos diferentes, mesma Solução)
+```sh
+dotnet ef migrations add CriacaoDasTabelasPedidoEquipeEProdutoESeeds --startup-project ../WaProject.ECommerce.Dashboard --context DashboardContext
+```
